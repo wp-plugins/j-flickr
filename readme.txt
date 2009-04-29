@@ -3,14 +3,14 @@ Contributors: chaostangent
 Tags: flickr,jflickr,j-flickr,photos,api,media,yahoo
 Requires at least: 2.5
 Tested up to: 2.7.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 Donate link: http://japanographia.com/jflickr/
 
-J-Flickr is a WordPress plugin that acts as a thin client over the Flickr API. It currently provides shortcode (e.g. [flickr key="value"]) syntax and flexible output using XSL.
+J-Flickr provides shortcode (e.g. [flickr key="value"]) syntax access to the Flickr API.
 
 == Description ==
 
-J-Flickr is designed to be as unintrusive as possible in giving you access to the Flickr API service. This means that you are not limited to the methods you can call or hamstrung by the output of the plugin. If you want to search for photos with an [Attribution License](http://creativecommons.org/about/licenses/) uploaded last year then you can, just as you can get a list of your public contacts or talk to the [Flickr Pandas](http://www.flickr.com/explore/panda). Essentially you construct the shortcode as if making an [API call](http://www.flickr.com/services/api/) and then either use one of the existing general templates or make your own! The templates are in XSL and operate directly on the XML sent back from Flickr so you’re never wanting for data that plugins may not expose.
+J-Flickr is designed to be as unintrusive as possible in giving you access to the Flickr API service. This means that you are not limited to the methods you can call or hamstrung by the output of the plugin. If you want to search for photos with an [Attribution License](http://creativecommons.org/about/licenses/) uploaded last year then you can, just as you can get a list of your public contacts or talk to the [Flickr Pandas](http://www.flickr.com/explore/panda). Essentially you construct the shortcode as if making an [API call](http://www.flickr.com/services/api/) and then either use one of the existing general templates or make your own! The templates are in XSL and operate directly on the XML sent back from Flickr so you're never wanting for data that other plugins may not expose.
 
 == Installation ==
 
@@ -22,14 +22,17 @@ J-Flickr is designed to be as unintrusive as possible in giving you access to th
 6. It's also probably a good idea to put in your Flickr username so that you can use the {{username}} macro in templates.
 
 == Examples ==
-Get a list of photos updated in April 2009
-[flickr method="photos.recentlyUpdated" min_date="2009-04-01" extras="license,geo,tags"]
+Get a list of photos updated in April 2009:
 
-Get the photos from a specific group pool
-[flickr method="groups.pools.getPhotos" group_id="57342295@N00" per_page="25" page="4"]
+	[flickr method="photos.recentlyUpdated" min_date="2009-04-01" extras="license,geo,tags"]
 
-Get the comments for a specific photo with a custom template
-[flickr method="photos.comments.getList" photo_id="3459139116" max_comment_date="2009-04-01" jflickr_template="commentTemplate"]
+Get the photos from a specific group pool:
+
+	[flickr method="groups.pools.getPhotos" group\_id="57342295@N00" per\_page="25" page="4"]
+
+Get the comments for a specific photo with a custom template:
+
+	[flickr method="photos.comments.getList" photo\_id="3459139116" max\_comment_date="2009-04-01" jflickr\_template="commentTemplate"]
 
 == Frequently Asked Questions ==
 
@@ -59,7 +62,7 @@ I've set the default to be 1 day as that's plenty of time between requests. The 
 
 == Thanks ==
 
-Many thanks to Fabien MARTY <fab@php.net> for his PEAR Cache_Lite work.
+Many thanks to Fabien MARTY for his PEAR Cache_Lite work.
 
 == Future ==
 
