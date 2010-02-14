@@ -2,9 +2,9 @@
 Contributors: chaostangent
 Tags: flickr,jflickr,j-flickr,photos,api,media,yahoo
 Requires at least: 2.5
-Tested up to: 2.7.1
-Stable tag: 1.0.1
-Donate link: http://japanographia.com/jflickr/
+Tested up to: 2.9.1
+Stable tag: 1.0.2
+Donate link: http://chaostangent.com/j-flickr/
 
 J-Flickr provides shortcode (e.g. [flickr key="value"]) syntax access to the Flickr API.
 
